@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<LangVersion>9.0</LangVersion>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="IndexRange" Version="1.0.1-beta.1" />
+		<PackageReference Include="Microsoft.CodeAnalysis.CSharp" PrivateAssets="all" Version="4.1.0-1.final" />
+		<PackageReference Include="Microsoft.CodeAnalysis.Analyzers" PrivateAssets="all" Version="3.3.3" />
+	</ItemGroup>
+</Project>
