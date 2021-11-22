@@ -34,7 +34,7 @@ namespace CompileTimeReflection
 
 			var compilation = context.Compilation;
 
-			context.AddSource("compiletime", "public class CompileTimeReflectionAttribute : System.Attribute { }");
+			context.AddSource("CompileTimeReflection.g.cs", "public class CompileTimeReflectionAttribute : System.Attribute { }");
 
 			foreach (var syntaxTree in compilation.SyntaxTrees)
 			{
@@ -184,6 +184,7 @@ namespace {typeSymbol.ContainingNamespace}
 		[System.Runtime.CompilerServices.CompilerGenerated]
 		public static ICompileTimeFieldInfo[] Fields => ___fields;
 
+		/*
 		{methodInfoDefinitions}
 
 		[System.Runtime.CompilerServices.CompilerGenerated]
@@ -193,6 +194,7 @@ namespace {typeSymbol.ContainingNamespace}
 
 		[System.Runtime.CompilerServices.CompilerGenerated]
 		public static ICompileTimeMethodInfo[] Methods => ___methods;
+		*/
 	}}
 }}";
 		}
